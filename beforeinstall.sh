@@ -1,3 +1,3 @@
 #!/bin/bash -xe
-sudo pkill -9 java
-touch testfile
+cd /home/ec2-user
+sudo rm -rf *
