@@ -4,9 +4,8 @@ files:
   - source: /
     destination: /home/ec2-user
 hooks:
-  AfterInstall:
-    - location: afterinstall.sh
-      timeout: 100
+  BeforeInstall:
+    - location: beforeinstall.sh
   ApplicationStart:
     - location: applicationstart.sh
       timeout: 100
