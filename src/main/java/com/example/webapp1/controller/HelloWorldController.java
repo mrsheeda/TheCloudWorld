@@ -9,7 +9,7 @@ public class HelloWorldController {
 	
 	@RequestMapping("/")
 	public String sayHello() {
-		return "Hello, This app is created for Demo purpose to NYL. This is an update\n";
+		return "Hello, This app is created for Demo purpose to NYL.\n This is another update";
 	}
 
 }
