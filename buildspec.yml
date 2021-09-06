@@ -19,5 +19,4 @@ artifacts:
     - appspec.yml
     - beforeinstall.sh
     - applicationstart.sh
-    - applicationstop.sh
   discard-paths: yes
