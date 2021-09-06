@@ -12,7 +12,7 @@ phases:
       - yum install zip -y
   pre_build:
     commands:
-      - wget https://wilshan-boot-spring-test.s3.amazonaws.com/spring-boot.zip
+      - wget https://wilshan-test-app.s3.amazonaws.com/spring-boot.zip
       - unzip spring-boot.zip
       - rm -rf spring-boot.zip
   build:
