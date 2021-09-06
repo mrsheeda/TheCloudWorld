@@ -4,6 +4,9 @@ files:
   - source: /
     destination: /home/ec2-user
 hooks:
+  ApplicationStop:
+    - location: applicationstop.sh
+      timeout: 100
   BeforeInstall:
     - location: beforeinstall.sh
       timeout: 100
