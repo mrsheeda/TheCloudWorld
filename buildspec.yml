@@ -10,7 +10,7 @@ phases:
       - yum install -y apache-maven
       - yum install java-1.8.0-openjdk-devel.x86_64 -y
       - yum install zip -y
-  pre-build:
+  pre_build:
     commands:
       - wget https://wilshan-boot-spring-test.s3.amazonaws.com/spring-boot.zip
       - unzip spring-boot.zip
