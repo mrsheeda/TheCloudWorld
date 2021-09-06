@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+  install: 
+    runtime-versions:
+      java: latest
+    commands:
+      - wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+      - sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
+      - yum install -y apache-maven
+      - yum install java-1.8.0-openjdk-devel.x86_64 -y
+      - yum install zip -y
+  pre-build:
+    commands:
+      - wget https://wilshan-boot-spring-test.s3.amazonaws.com/spring-boot.zip
+      - unzip spring-boot.zip
+      - rm -rf spring-boot.zip
+  build:
+    commands:
+      - mvn clean install
+artifacts:
+  files:
+    - target/webapp-1-0.0.1-SNAPSHOT.jar
+  discard-paths: yes
