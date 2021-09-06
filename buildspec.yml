@@ -16,4 +16,7 @@ phases:
 artifacts:
   files:
     - target/webapp-1-0.0.1-SNAPSHOT.jar
+    - appspec.yml
+    - beforeinstall.sh
+    - applicationstart.sh
   discard-paths: yes
