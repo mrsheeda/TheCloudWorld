@@ -13,7 +13,7 @@ public class HelloWorldController {
 			+
 			"\n"
 			+
-			"This app has been deployed using Pipeline"
+			"This app has been deployed using Pipeline (v0.2)"
 			+
 			"\n";
 	}
