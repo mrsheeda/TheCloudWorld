@@ -42,7 +42,7 @@ sudo yum install java-1.8.0-openjdk-devel.x86_64 -y
 
 ## Step-4
 
-Build the Artifact
+Building the Artifact
 
 ```bash
 mvn clean install
